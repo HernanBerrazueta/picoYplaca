@@ -1,6 +1,6 @@
 # Pico & Placa
 
-# The rules of pico y placa are from 07H00-09H30 and 16H00-19H30:
+# The rules of pico y placa are that you can not drive from 07H00-09H30 and 16H00-19H30 according to your plate:
 
 ------------------------------
 the plates that have the last number 0 / 1 / 2 / 3:
