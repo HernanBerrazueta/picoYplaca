@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico y Placa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</head>
+<body onload="inputsMask()">
+    <div class="container">
+        <div class="row">
+            <div class="h-100 p-5 text-white bg-dark rounded-3 mt-5">
+                <h1 class="display-5 fw-bold">Pico y Placa</h1>
+                <h5>By Hernán Berrazueta</h5>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <form class="col-4">
+                    <div class="mb-4 text-center">
+                        <h3>COMPLETE THE FORM</h3>
+                    </div>
+                    <div class="mb-3">
+                      <label for="plate" class="form-label">Plate</label>
+                      <input id="plateInput" type="text" class="form-control" style="  text-transform: uppercase;">
+                      <div id="dateHelp" class="form-text">Example: PCH-789</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Date</label>
+                      <input id="dateInput" type="text" class="form-control" >
+                      <div id="dateHelp" class="form-text">DD.MM.YYYY</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="time" class="form-label">Time</label>
+                      <input id="timeInput" type="time" class="form-control">
+                      <div id="dateHelp" class="form-text">07:20 a. m.</div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-5">
+                        <button type="button" class="btn btn-lg btn-success" onclick="availableCheck()">¿Can I drive?</button>
+                        <button type="button" class="btn btn-lg btn-danger" onclick="clearFields()">Clear Fields</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="main.js"></script>
+</body>
+</html>
